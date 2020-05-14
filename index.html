@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F.X.R</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">B.L.C</div>
+        <nav >
+            <ul>
+                <li><a href="#" <!--class="activo"-->Inicio</a></li>
+
+                <li class="sub-menu"><a href="#">Nosotros</a>
+                    <ul>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Premios</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                      
+                      <!-- <li><a href="#"></a></li>--> 
+                    </ul>
+                </li>
+               
+                <li class="sub-menu"><a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#">Legales</a></li>
+                        <li><a href="#">Contables</a></li>
+                        <li><a href="#">Auditorias</a></li>
+                        <li><a href="#">Otros</a></li>
+                    </ul>
+                </li>
+                   
+                <li><a href="index.html">Clientes</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+    <!-- JAVASCRIP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('activo')
+        })
+        $('ul li').click(function(){
+            $(this).siblings().removeClass('activo');
+            $(this).toggleClass('activo');
+        })
+
+    })
+    </script>
+
+<section id="banner">
+    
+    <h1>Bufete Legal y Contable L.C</h1>
+    <p>El Progreso, Yoro.</p>
+
+</section>
+
+
+
+</body>
+</html>

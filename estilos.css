@@ -1,0 +1,275 @@
+/* fuente google font
+
+font-family: 'Fjalla One', sans-serif;
+
+*/
+
+body
+{
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(163, 158, 158);
+   /* background:url(fondo.jpg);*/
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+header .logo
+{
+    color: rgb(255, 255, 255);
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav
+{
+    float: right;
+
+}
+
+header nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li
+{
+    list-style: none;
+    position: relative;
+
+}
+
+
+header nav ul li.sub-menu:before
+{
+    content: '\f13a';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+}
+
+header nav ul li ul
+{
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+
+header nav ul li.activo.sub-menu:before
+{
+    content: '\f139';
+}
+header nav ul li.activo ul
+{
+    display: block;
+}
+header nav ul li ul li 
+{
+    display: block;
+    width: 200px;
+}
+
+header nav ul li a
+{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    
+}
+
+header nav ul li a:hover,
+header nav ul li a.activo
+{
+    color: #fff;
+    background: #2196f3;
+
+}
+
+.menu-toggle
+{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:991px)
+{
+    header
+    {
+        padding: 0 20px;
+
+    }
+    .menu-toggle
+    {
+        display: block;
+
+    }
+    header nav
+    {
+        /*display: none;*/
+        position: absolute;
+        width: 100%;
+        height: calc (100vh - 50px);
+        background: #333 ;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+
+    }
+    header nav.activo
+    {
+        left: 0;
+    }
+    header nav ul 
+    {
+      display: block;
+      text-align: center;
+    }
+
+    header nav ul  li a 
+    {
+        border-bottom: 1px solid rgba(0,0,0, .2);
+    }
+
+    header nav ul li.activo ul
+    {
+        position:relative;
+        background: #003e6f;
+    }
+    header nav ul li ul li
+
+    {
+        width: 100%;
+    }
+}
+
+
+
+#banner {
+		padding: 12em 0 10em 0;
+		background-image: url('banner.jpg');
+		/*filter: alpha(opacity=90); */
+	/*	background-color: rgb(0, 0, 1,3);*/
+		opacity: 4.8;
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		text-align: center;
+		/*border-top: 0.5em solid #5385c1;*/
+	}
+
+		#banner h1 {
+            
+          /*  font-family: 'Fjalla One', sans-serif;*/
+            font-family: 'Kaushan Script', cursive;
+			font-size: 3.5em;
+			font-weight: 500;
+			color: rgb(255, 255, 255);
+			line-height: 0.5em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+        }
+        
+        #banner p {
+			font-size: 1em;
+            color: rgba(255, 255, 255, 0.856);
+            
+			margin-bottom: 1.75em;
+		}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+			#banner {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 10em 2em 8em 2em;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 8em 1.5em 6em 1.5em;
+			}
+
+				#banner h1 {
+					font-size: 2.0em;
+				}
+
+				#banner p {
+					font-size: .9em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 6em 1.5em 4em 1.5em;
+            }
+            
+            #banner h1 {
+                font-size: 2.0em;
+            }
+
+            @media screen and (max-width: 402px) {
+
+                #banner {
+                    padding: 4em 1.5em 1em 1.5em;
+                }
+                
+                #banner h1 {
+                    font-size: 1.5em;
+                }
+    
+
+
+		}
+
+    }
+
